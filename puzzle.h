@@ -19,6 +19,10 @@
 
 #include "fmt/core.h"
 
+using Sequence = std::vector<int64_t>;
+using History = std::vector<Sequence>;
+using HistoryList = std::vector<History>;
+
 int puzzle_sample_1(const std::string &base_file_path);
 
 int puzzle_sample_2(const std::string &base_file_path);
@@ -30,5 +34,8 @@ int puzzle_2(const std::string &base_file_path);
 int do_puzzle_1(std::ifstream &file);
 
 int do_puzzle_2(std::ifstream &file);
+
+int64_t get_next_value(History &history);
+void compute_til_zero(History &history, Sequence &sequence);
 
 #endif //PUZZLE_H
