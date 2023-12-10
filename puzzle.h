@@ -38,4 +38,6 @@ int do_puzzle_2(std::ifstream &file);
 int64_t get_next_value(History &history);
 void compute_til_zero(History &history, Sequence &sequence);
 
+int64_t get_previous_value(History &history);
+
 #endif //PUZZLE_H
